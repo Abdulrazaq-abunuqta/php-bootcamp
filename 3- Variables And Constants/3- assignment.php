@@ -1,8 +1,16 @@
+<!--
+
+$a = 200;
+ $b = $a;
+ $a = 100;
+
+echo $b; // 100
+
+-->
 <?php
+$a = 200;
+$b = &$a;
+$a = 100;
 
-// echo "???";
-// Needed Output
-// Hello "Elzero" \\ """ We Love "$$PHP"
+echo $b; // 100
 
-
-echo "Hello \"Elzero\" \\\\ \"\"\" We Love \"\$\$PHP\"";
