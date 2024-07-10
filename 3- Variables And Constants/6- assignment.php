@@ -1,16 +1,67 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <?php
+// Print the line number where this code is located
+echo "Line number: " . __LINE__ . "<br>";
 
-$something = "Programming";
+// Print the file name where this code is located
+echo "File name: " . __FILE__ . "<br>";
 
-echo <<< code
-
-Hello \PHP\
-We Love $something
-
-code;
-
-// [1] Fix The Error
-// [2] Remove 2 Characters To Get The Output
-
-// Needed Output
-//Hello \PHP\ We Love Programming
+// Print the directory name where this file is located
+echo "Directory: " . __DIR__ . "<br>";
+?>
