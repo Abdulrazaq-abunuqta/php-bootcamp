@@ -1,15 +1,13 @@
 <?php
 
-$a = 10;
-$b = 20;
-$c = 15;
+$points = 10;
 
-var_dump($a == $b); // True
-var_dump($c > $a); // True
-var_dump($a < $b); // True
-var_dump($a != $b); // True
-var_dump($a <> $c); // True
-var_dump($a !== $c); // True
-var_dump(gettype($a) && gettype($b)); // True
-var_dump(gettype($a) || gettype($b)); // True
-var_dump(gettype((float) $a) xor gettype($b)); // True
+$points+=3 ;
+
+//intcrementing
+echo $points; // 13
+
+echo "<br>";
+
+//Decrementing
+echo $points -=5; // 8;
