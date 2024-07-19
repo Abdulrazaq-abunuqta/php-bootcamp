@@ -1,16 +1,15 @@
 <?php
 
-/*
+$a = 10;
+$b = 20;
+$c = 15;
 
-echo "We \n Love \n Elzero \n Web \n School";
-// Needed Output
-We
-Love
-Elzero
-Web
-School 
-
-*/
-
-//nl2br(); 
-echo nl2br("We \n Love \n Elzero \n Web \n School");
+var_dump($a == $b); // True
+var_dump($c > $a); // True
+var_dump($a < $b); // True
+var_dump($a != $b); // True
+var_dump($a <> $c); // True
+var_dump($a !== $c); // True
+var_dump(gettype($a) && gettype($b)); // True
+var_dump(gettype($a) || gettype($b)); // True
+var_dump(gettype((float) $a) xor gettype($b)); // True

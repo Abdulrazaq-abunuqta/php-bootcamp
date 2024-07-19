@@ -1,8 +1,32 @@
 <?php
 
-// echo "???";
-// Needed Output
-// Hello "Elzero" \\ """ We Love "$$PHP"
+$a = 10;
+$b = 20;
+$c = 15;
 
+var_dump($a <= $b);  // True
+echo "<br>";
 
-echo "Hello \"Elzero\" \\\\ \"\"\" We Love \"\$\$PHP\"";
+var_dump($c > $a);   // True
+echo "<br>";
+
+var_dump($a < $b);   // True
+echo "<br>";
+
+var_dump($a != $b);  // True
+echo "<br>";
+
+var_dump($a <> $c);  // True
+echo "<br>";
+
+var_dump($a !== $c); // True
+echo "<br>";
+
+var_dump(gettype($a) && gettype($b)); // True
+echo "<br>";
+
+var_dump(gettype($a) || gettype($b)); // True
+echo "<br>";
+
+var_dump(gettype((float) $a) != gettype($b)); // True
+echo "<br>";
