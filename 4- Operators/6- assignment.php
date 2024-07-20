@@ -1,16 +1,19 @@
 <?php
 
-$something = "Programming";
+$a = "Elzero";
+$b = "Web";
+$c = "School";
 
-echo <<< code
+// Method one
+$d = "$a $b $c";
 
-Hello \PHP\
-We Love $something
+// Method Two
+$d = "{$a} {$b} {$c}";
 
-code;
+// Method Three
+$d = "$a "."$b "."$c ";
 
-// [1] Fix The Error
-// [2] Remove 2 Characters To Get The Output
+// Method Four
+$d = $a." " . $b." " . $c ;
 
-// Needed Output
-//Hello \PHP\ We Love Programming
+echo $d; // Elzero Web School
