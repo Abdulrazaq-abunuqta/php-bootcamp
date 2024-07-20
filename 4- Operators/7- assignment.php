@@ -1,9 +1,10 @@
 <?php
 
-echo is_int((int) "Hello PHP");;
-echo '<br>';
-echo gettype((int) "Hello PHP");
+// Code 1
+@$a = $b;
 
-// Needed Output
-//1
-//integer
+// Code 2
+@$f = file("Not_A_File");
+
+// Code 3
+@include("Not_A_File");
